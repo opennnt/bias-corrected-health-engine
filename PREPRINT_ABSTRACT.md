@@ -1,4 +1,13 @@
 # Preprint Abstract
+
+**Author:** Eric Chong  
+**Affiliation:** opennnt  
+**Year:** 2026  
+**Repository:** https://github.com/opennnt/bias-corrected-health-engine  
+**DOI:** pending
+
+---
+
 ## Title
 
 **Multi-Vector Bias Correction for Comparative Health Intervention Efficacy:

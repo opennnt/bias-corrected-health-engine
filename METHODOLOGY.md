@@ -1,4 +1,14 @@
-# Methodology: Multi-Vector Bias Correction for Comparative Health Intervention Efficacy
+# Multi-Vector Bias Correction for Comparative Health Intervention Efficacy
+
+## A Computational Framework Applied to Pharmaceutical vs. Non-Pharmaceutical Chronic Disease Prevention
+
+**Author:** Eric Chong  
+**Affiliation:** opennnt  
+**Year:** 2026  
+**Repository:** https://github.com/opennnt/bias-corrected-health-engine  
+**Preprint DOI:** pending  
+
+---
 
 ## Abstract
 
