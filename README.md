@@ -78,7 +78,7 @@ After bias correction across 30+ interventions:
 ## Installation
 
 ```bash
-git clone https://github.com/your-username/bias-corrected-health-engine
+git clone https://github.com/opennnt/bias-corrected-health-engine
 cd bias-corrected-health-engine
 pip install numpy
 ```
