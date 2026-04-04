@@ -105,8 +105,8 @@ print(h["H1_lifestyle_dominates_pharma"])
 Or run directly:
 
 ```bash
-python engine/run.py --out_dir results/run_0
-python engine/run.py --out_dir results/long_term --time_horizon long
+python -m engine.run --out_dir results/run_0
+python -m engine.run --out_dir results/long_term --time_horizon long
 ```
 
 ## Structure
