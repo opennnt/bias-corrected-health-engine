@@ -8,6 +8,7 @@ under structural funding bias correction**
 **Author:** Eric Chong  
 **Year:** 2026  
 **Preprint:** medRxiv (DOI pending)  
+**Pre-Registration:** [OSF](https://osf.io/XXXXX) *(URL to be updated after registration)*  
 **License:** MIT  
 **Repository:** [github.com/opennnt/bias-corrected-health-engine](https://github.com/opennnt/bias-corrected-health-engine)
 
