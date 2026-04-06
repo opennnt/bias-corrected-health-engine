@@ -43,6 +43,10 @@ efficacy advantage over pharmaceutical comparators at 5–10 year horizons (adju
 composite 0.261 vs. 0.047). Oral infection elimination shows adjusted NNT for all-cause
 mortality at 10 years of ~28 — superior to statins for primary CVD prevention (NNT 150),
 SSRIs for depression prevention (NNT 200), and aspirin for primary prevention (NNT 250).
+This NNT estimate is model-derived from surrogate and composite endpoints (not
+a single trial-observed mortality endpoint), spans a plausible range of 15–60
+across correction factor sensitivity, and awaits validation by a powered
+MACE-endpoint trial that current funding structures do not incentivize.
 Whole food diet shows a T2D disease reversal rate of 58% vs. 5% for metformin. Three
 interventions are identified as severely suppressed by jurisdictional bias: turkey tail
 PSK (Japan-approved since 1977, absent from US guidelines: 3.10x suppressed) and

@@ -84,6 +84,11 @@ Statin primary prevention NNT: 150
 SSRI primary prevention NNT: 200  
 Aspirin primary prevention NNT: 250
 
+> **Note on the NNT estimate:** The NNT of 28 is a model-derived point estimate
+> (plausible range: 15–60) computed from surrogate and composite endpoints, not a
+> single trial-observed mortality endpoint. No MACE-endpoint trial for periodontal
+> treatment exists. See METHODOLOGY.md Section 4 for full uncertainty discussion.
+
 The research gap is jurisdictional, not biological. This engine quantifies it
 as the `jurisdictional_separation` bias vector and corrects for it explicitly.
 

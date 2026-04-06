@@ -257,6 +257,24 @@ overestimate the benefit of the intervention.
 | Traditional | 0.165 | 80 |
 | Pharmaceutical | 0.047 | 99.4 |
 
+**Uncertainty and validation status of the NNT estimate.** The NNT of 28 for
+oral infection elimination (all-cause mortality at 10 years) is a model-derived
+estimate computed by the bias correction engine from published effect sizes — it
+is not a directly observed endpoint from a single clinical trial. The component
+effect sizes draw partly on surrogate endpoints (CRP reduction of 0.69 mg/L in
+periodontal treatment RCTs, HbA1c reduction, odds ratio for first MI from the
+PAROKRANK study) rather than a dedicated all-cause mortality randomized controlled
+trial. No MACE-endpoint (Major Adverse Cardiovascular Events) trial for periodontal
+treatment currently exists — which is itself evidence of the jurisdictional funding
+gap this framework quantifies. Across plausible correction factor ranges, the NNT
+estimate spans approximately 15–60, with 28 as the central point estimate under the
+default vector magnitudes. This estimate would need to be validated by a powered
+mortality-endpoint trial, which the current funding structure does not incentivize
+(see Section 6, Validation Test Proposal). Multiple independent lines of evidence
+(cardiovascular, cancer, metabolic, neurological) all show directional support for
+the oral-systemic thesis, which is why the composite score is robust even as
+individual component estimates carry uncertainty.
+
 ### Most suppressed interventions (highest upward correction)
 
 | Intervention | Bias Multiplier | Key Suppression Mechanism |
@@ -316,6 +334,26 @@ truncation, publication bias) and cardiovascular harm risk, that constitutes
 falsifiable evidence that the framework has predictive validity.
 
 We propose this as an open research question for community validation.
+
+---
+
+## Statements
+
+**Data Availability:** All data, code, and correction factors are available at
+https://github.com/opennnt/bias-corrected-health-engine under MIT license.
+Complete intervention definitions, bias vector magnitudes, and scoring parameters
+are embedded in the source code and documented in this manuscript.
+
+**Competing Interests:** The author declares no competing interests. No payments
+or services have been received from any third party in the past 36 months that
+could influence the submitted work.
+
+**Ethics Statement:** This study uses only published, aggregated data from the
+existing peer-reviewed literature. No human subjects were involved. No primary
+data collection was performed. IRB approval was not required.
+
+**Funding:** This work received no external funding. All development, analysis,
+and manuscript preparation were self-funded by the author.
 
 ---
 

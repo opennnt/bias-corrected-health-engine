@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata from this file."
+type: software
+title: "Bias-Corrected Health Evidence Engine"
+abstract: "A computational framework for comparing health intervention efficacy after applying systematic corrections for documented distortions in the published evidence base."
+authors:
+  - family-names: Chong
+    given-names: Eric
+version: 1.0.0
+date-released: "2026-04-05"
+license: MIT
+repository-code: "https://github.com/opennnt/bias-corrected-health-engine"
+url: "https://github.com/opennnt/bias-corrected-health-engine"
+keywords:
+  - comparative effectiveness
+  - evidence synthesis
+  - publication bias
+  - oral-systemic health
+  - NNT
+  - bias correction
+preferred-citation:
+  type: article
+  title: "Multi-Vector Bias Correction for Comparative Health Intervention Efficacy: A Computational Framework Applied to Pharmaceutical vs. Non-Pharmaceutical Chronic Disease Prevention"
+  authors:
+    - family-names: Chong
+      given-names: Eric
+  year: 2026
+  journal: "medRxiv"
+  doi: "pending"
