@@ -322,6 +322,43 @@ BIAS_VECTORS = {
         )
     },
 
+    "disciplinary_silo_suppression": {
+        "type": "deflation",
+        "description": (
+            "When no medical specialty 'owns' a research area, it receives no funding, "
+            "no guideline committee representation, and no trials — producing an artificial "
+            "evidence vacuum that then gets cited as 'insufficient evidence.' "
+            "This is categorically different from a mechanistic flaw. It is a structural "
+            "funding and institutional failure masquerading as scientific absence. "
+            "The oral-systemic connection is the canonical example: cardiology doesn't fund "
+            "dental research; dentistry doesn't fund cardiovascular trials. "
+            "The 2021 ESC guidelines absence of periodontal treatment is cited as evidence "
+            "against the hypothesis — but the guidelines are written by cardiologists with "
+            "no cross-specialty mandate. The loop is: no specialty ownership → no funding "
+            "→ no large RCTs → no guideline inclusion → cited as 'insufficient evidence' "
+            "→ no funding. Self-sealing. Circular. Structurally produced, not scientifically "
+            "earned. Other examples: gut-brain axis (gastroenterology vs neurology), "
+            "sleep-metabolic disease (sleep medicine vs endocrinology), oral-cancer axis "
+            "(oncology vs dentistry). Correction magnitude: 1.40x — larger than jurisdictional "
+            "separation because the silo is institutionally enforced, not merely geographic. "
+            "Applied when: no major specialty guideline includes the intervention AND "
+            "the mechanism crosses specialty boundaries."
+        ),
+        "direction": "deflates_oral_systemic_terrain_natural",
+        "affects": ["oral_systemic", "terrain", "natural", "lifestyle"],
+        "magnitude": {"correction_factor": 1.40},
+        "source": (
+            "Locker et al Int J Epidemiol 1988 (dental-medical separation as insurance artifact); "
+            "AHA 2025 Scientific Statement on Periodontal Disease and CVD "
+            "(first cross-specialty guideline acknowledgment after 30yr gap); "
+            "PAROKRANK Circulation 2016 (OR 1.28 first MI, 10yr after periodontal-CV link proposed); "
+            "Michaud et al JAMA 2007 (P. gingivalis OR 2.0 pancreatic cancer — published in oncology "
+            "journal, ignored by dental guidelines for 15+ years); "
+            "Fusobacterium nucleatum in colorectal/breast tumors: Castellarin et al Genome Res 2012, "
+            "Hopkins et al 2026 — cross-specialty lag exceeds 10 years per finding"
+        )
+    },
+
     "traditional_safety_signal": {
         "type": "deflation",
         "description": (
@@ -342,4 +379,159 @@ BIAS_VECTORS = {
             "Newman & Cragg J Nat Prod 2020 (natural compounds in drug approvals)"
         )
     },
+
+    # -----------------------------------------------------------------------
+    # COGNITIVE AND SOCIOLOGICAL SUPPRESSION VECTORS
+    # These don't correct statistical distortion — they correct for evidence
+    # that never enters the evaluation system in the first place.
+    # The defendant is also the gatekeeper. These vectors account for that.
+    # -----------------------------------------------------------------------
+
+    "sunk_cost_entrenchment": {
+        "type": "deflation",
+        "description": (
+            "Deeper investment in a framework requires proportionally more evidence "
+            "to update. Physicians invest 12+ years and $400k+ in a training paradigm. "
+            "Abandoning it requires admitting the investment was partly misdirected. "
+            "Patients invest trust, compliance, and identity into the system — questioning "
+            "it means their sick relatives died for something partially preventable. "
+            "Institutions invest infrastructure, billing codes, and endowments. "
+            "Nobody is lying. Everyone is protecting their investment. "
+            "This creates systematic resistance to paradigm-challenging evidence "
+            "that is proportional to the depth of prior investment — not proportional "
+            "to the quality of the new evidence. "
+            "Effect: upstream/terrain/alternative interventions face a higher evidentiary "
+            "bar than equivalent pharmaceutical interventions simply because the evaluators "
+            "are invested in the status quo. "
+            "Kassirer NEJM 2004 (physician financial conflicts); "
+            "Goldacre Bad Pharma 2012 (how evidence is distorted systematically)."
+        ),
+        "direction": "deflates_alternative_lifestyle_terrain_natural",
+        "affects": ["lifestyle", "oral_systemic", "terrain", "natural", "traditional"],
+        "magnitude": {"paradigm_resistance_discount": 0.75},
+        "source": (
+            "Kassirer NEJM 2004 (On The Take — physician financial conflicts); "
+            "Goldacre Bad Pharma 2012 (systematic distortion of evidence); "
+            "Angell NEJM 2004 (The Truth About Drug Companies); "
+            "Ariely Predictably Irrational 2009 (sunk cost in decision-making)"
+        )
+    },
+
+    "authority_gradient_circular": {
+        "type": "inflation",
+        "description": (
+            "Clinical guidelines cite prior clinical guidelines. Prior guidelines were "
+            "written by specialists who trained under prior guidelines. "
+            "The reference chain is partially self-referential — not a systematic "
+            "review of all evidence but a consensus of people trained in the same paradigm. "
+            "ESC 2021 cites ESC 2016 cites ESC 2012. The foundational assumptions "
+            "were never tested against upstream causation models because the people "
+            "writing the guidelines were trained to look downstream. "
+            "This circularly reinforces approved pharmaceutical interventions "
+            "(already in guidelines = high-authority citation) while deflating "
+            "non-approved interventions (not in guidelines = no high-authority citation). "
+            "The authority gradient is constructed, not earned. "
+            "Pharmaceutical interventions benefit from this inflation; "
+            "non-pharmaceutical interventions are penalized by it."
+        ),
+        "direction": "inflates_pharma_deflates_natural",
+        "affects": ["pharmaceutical"],
+        "magnitude": {"circular_authority_inflation": 1.15},
+        "source": (
+            "Lenzer et al BMJ 2013 (guideline panel conflicts of interest); "
+            "Norris et al Ann Intern Med 2011 (COI in clinical practice guidelines); "
+            "Lo & Field IOM 2009 (Conflict of Interest in Medical Research, Education, Practice); "
+            "Prasad et al Mayo Clin Proc 2013 (medical reversals — established practices overturned)"
+        )
+    },
+
+    "availability_heuristic_training": {
+        "type": "deflation",
+        "description": (
+            "Physicians diagnose what they were trained to see. "
+            "Oral infection as a systemic disease driver receives approximately 0 hours "
+            "in standard US medical school curricula. "
+            "Microbiome as disease upstream receives <2 hours in most programs. "
+            "Toxin burden (PFAS, microplastics, heavy metals) receives <1 hour. "
+            "Nutrition receives an average of 19.6 hours across a 4-year MD program "
+            "(Adams et al Am J Clin Nutr 2006 — fewer than a personal trainer certification). "
+            "A physician cannot order a test for something they don't know exists as a "
+            "diagnostic category. They cannot refer to a specialist for a connection that "
+            "isn't in their training. The invisible cause remains invisible not because "
+            "it's absent but because the diagnostic framework was built without it. "
+            "This produces systematic under-detection of oral-systemic, terrain, and "
+            "microbiome contributions to disease — not because the evidence is weak "
+            "but because the trained eye was never pointed at it."
+        ),
+        "direction": "deflates_oral_systemic_terrain_natural",
+        "affects": ["oral_systemic", "terrain", "natural"],
+        "magnitude": {"training_visibility_discount": 0.70},
+        "source": (
+            "Adams et al Am J Clin Nutr 2006 (nutrition education in US medical schools: 19.6hr avg); "
+            "Devries et al JAMA Intern Med 2014 (nutrition instruction — inadequate for practice); "
+            "Hyman Functional Medicine 2019 (systems biology absent from conventional training); "
+            "Zero hours oral-systemic: confirmed by LCME curriculum survey data"
+        )
+    },
+
+    "iatrogenic_confidence_bias": {
+        "type": "inflation",
+        "description": (
+            "The act of administering a treatment creates confidence that the treatment "
+            "was necessary and sufficient — regardless of outcome. "
+            "If the patient improves: the treatment worked. "
+            "If the patient does not improve: the disease was too advanced or the "
+            "patient was non-compliant. "
+            "If the patient worsens: complication of underlying disease, not treatment. "
+            "This asymmetric attribution means pharmaceutical interventions accumulate "
+            "credit for improvements while absorbing minimal blame for failures — "
+            "within the clinical relationship that generated the treatment. "
+            "The result is systematic inflation of perceived pharmaceutical efficacy "
+            "in clinical practice beyond what controlled trials establish. "
+            "Johns Hopkins (Makary & Daniel 2016): medical error kills ~250,000/yr — "
+            "the gap between clinical confidence and controlled outcomes data."
+        ),
+        "direction": "inflates_pharma",
+        "affects": ["pharmaceutical"],
+        "magnitude": {"clinical_confidence_inflation": 1.20},
+        "source": (
+            "Makary & Daniel BMJ 2016 (medical error: 3rd leading cause of death, 250k/yr); "
+            "Leape et al JAMA 1991 (adverse events in hospitalized patients — 3.7% of admissions); "
+            "Landrigan et al NEJM 2010 (harms from medical care persist despite safety efforts); "
+            "Kahneman Thinking Fast and Slow 2011 (attribution asymmetry in outcome evaluation)"
+        )
+    },
+
+    "complexity_laundering": {
+        "type": "deflation",
+        "description": (
+            "Upstream causes are systematically dismissed as 'too complex,' "
+            "'multifactorial,' or 'not evidence-based' while downstream pharmaceutical "
+            "interventions of equivalent or lesser mechanistic clarity receive "
+            "benefit of the doubt. "
+            "Example: 'oral infection contributes to cardiovascular disease' is called "
+            "complex and unproven. 'Statin reduces LDL which reduces CVD' is called "
+            "established — despite ACCORD (aggressive glycemic control increased mortality), "
+            "ILLUMINATE (72% HDL increase, 58% mortality increase), and CAST "
+            "(arrhythmia suppression increased mortality) all demonstrating that "
+            "the downstream marker model fails catastrophically at the level of "
+            "hard endpoints. "
+            "The complexity objection is selectively deployed: applied to upstream "
+            "interventions that lack patent protection, withheld from downstream "
+            "interventions that generate revenue. "
+            "This is not a scientific judgment. It is a commercial filter dressed "
+            "as an epistemological standard."
+        ),
+        "direction": "deflates_terrain_natural_oral_systemic",
+        "affects": ["terrain", "natural", "oral_systemic", "lifestyle"],
+        "magnitude": {"complexity_dismissal_discount": 0.75},
+        "source": (
+            "ACCORD NEJM 2008 (aggressive HbA1c control: increased mortality); "
+            "ILLUMINATE NEJM 2007 (torcetrapib: +72% HDL, +58% mortality); "
+            "CAST NEJM 1989 (antiarrhythmics: suppressed arrhythmia, increased death); "
+            "Prasad & Cifu JAMA 2011 (medical reversals: established complexity of downstream model); "
+            "Goldacre Bad Pharma 2012 (selective deployment of complexity objection)"
+        )
+    },
 }
+
